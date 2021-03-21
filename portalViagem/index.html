@@ -3,46 +3,72 @@
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <link href="css/style.css" rel="stylesheet" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
         <title>Portal de Viagens</title>
     </head>
-    <body>
-        <header class="topo">
-            <ul>
-                <li><b>PORTAL DE VIAGENS</b></li>
-                <li>CONTATO</li>
-                <li>VALORES</li>
-                <li>DESTINOS</li>
-            </ul>
-        </header>
-        <main class="nave">
-            <div class="naveimg">
-                <img src="img/navesfundo.png" alt="Imagem de uma Nave">
+    <body style="font-family: 'Rubik', sans-serif">
+        <div class="container-fluid" style="background-color:#1bbc9b">
+            <div class="row p-2" style="background-color:#2d3e50; color: white">
+                <div class="col-2 offset-1">
+                    <a href="#" class="text-reset"><b>PORTAL DE VIAGENS</b></a>
+                </div>
+                <div class="col offset-4">
+                    <a href="#destino" class="text-reset">DESTINOS</a>
+                </div>
+                <div class="col">
+                    <a href="#" class="text-reset">VALORES</a>
+                </div>
+                <div class="col">
+                    <a href="#" class="text-reset">CONTATO</a>
+                </div>
             </div>
-            <article>
+
+            <div class="text-center pb-4" style="color: white;">
+                <img src="img/navesfundo.png" class="img-fluid" alt="Imagem de uma Nave">
                 <h2>AS MELHORES NAVES!</h2>
-            </article>
-            <article>
-                <h3>Preços especiais para os planetas da federação galáctica. Visite ainda
-                universos, dimensões e realidades alternativas!</h3>
-            </article>
-        </main>
-        <main class="destino">
-            <h1>CONSULTAR VALORES</h1>
-            <div class="formulario">
-                <form class="consulta">
-                <label>Origem</label>
-                <input type="text" name="origem" />
-                <label>Destino</label>
-                <input type="text" name="destino" />
-                <label>Data de partida</label>
-                <input type="text" name="partida" />
-                <label>Data de volta</label>
-                <input type="text" name="volta" />
-                <button>Consultar</button>
+                <p>Preços especiais para os planetas da federação galáctica. Visite ainda
+                    universos, dimensões e realidades alternativas!</p>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div id="destino" class="text-start p-5" style="background-color: white;">
+                <h2 class="text-center">CONSULTAR VALORES</h2>
+                <form class="text-start">
+                    <div class="mb-3">
+                        <label for="origem" class="form-label">Origem</label>
+                        <input type="text" class="form-control" id="origem">
+                        <hr>
+                    </div>
+                    <div class="mb-3">
+                        <label for="destine" class="form-label">Destino</label>
+                        <input type="text" class="form-control" id="destine">
+                        <hr>
+                    </div>
+                    <div class="mb-3">
+                        <label for="dateGo" class="form-label">Data de partida</label>
+                        <input type="date" class="form-control" id="dateGo">
+                        <hr>
+                    </div>
+                    <div class="mb-3">
+                        <label for="dateBack" class="form-label">Data de volta</label>
+                        <input type="date" class="form-control" id="dateBack">
+                        <hr>
+                    </div>
+                    <button type="submit" class="btn" style="background-color:#1bbc9b; color: white">Consultar</button>
                 </form>
             </div>
-        </main>
+        </div>
+
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
     </body>
 </html>
